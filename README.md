@@ -61,6 +61,10 @@
 
 一個 ``MSP_main`` 函數，接收 ``req`` 和 ``param`` 兩個參數
 
+``req``是網頁請求類別，跟普通的req一樣
+
+``param``是參數，如果不用POST，那參數就會以物件傳遞
+
 
 ``./test/test.js``
 ```js
