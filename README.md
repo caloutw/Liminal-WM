@@ -79,7 +79,14 @@ Next~
 
 
 # 基礎運行
-請檢查 ``url.json``
+
+網頁運行請在``./``創建資料夾，在資料夾中創建檔案即可
+
+系統運行程序是``./main.mjs``，除非你是開發者，要不然不要去破壞裡面的東西
+
+系統主建構資料夾是``./_Service``，除非你是開發者，要不然不要去破壞裡面的東西
+
+請檢查 ``./_Service/url.json``
 裡面的範例格式應該看得懂
 | 物件 | 用途 |
 |---|---|
@@ -88,6 +95,23 @@ Next~
 | target | 目標資料夾 |
 | direct_access | 允許直接透過網址存取? |
 | allow_extension | 允許的類型 (default 系統會使用預設) |
+
+假設你要將 Hello 引導至根目錄，並且允許直接存取，且僅允許jpg的流量，那麼就添加一個物件
+```json
+{
+	"name" : "Hello JPG",
+	"url" : "Hello",
+	"target" : "",
+	"direct_access" : true,
+	"allow_extension" : {
+	    "jpg":{
+		"type":"default"
+	    }
+	}
+}
+```
+
+> 記住 : 如果你允許了根目錄導向根目錄，所有資料夾導向邏輯將被覆蓋。
 
 
 # 如何運行
