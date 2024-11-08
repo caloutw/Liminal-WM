@@ -64,12 +64,12 @@
 
 ``./test/test.js``
 ```js
-async  function  MSP_main(req, param){
-	return  "Hello World";
+async function MSP_main(req, param){
+	return "Hello World";
 }
 
-module.exports  = {
-	MSP_main :  MSP_main
+module.exports = {
+	MSP_main : MSP_main
 }
 ```
 接下來進入``localhost:51000/test/test.js``
