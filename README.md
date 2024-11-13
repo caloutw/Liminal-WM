@@ -1,4 +1,5 @@
 <div align="center">
+<img src="./_Service/Web/Logo.png" width="200px">
 <h1>Liminal-WM</h1>
 <p>Liminal Web Manager</p>
 <sub>基於Nodejs的網頁管理員</sub>
