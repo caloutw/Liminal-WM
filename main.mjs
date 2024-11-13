@@ -88,7 +88,7 @@ service.addListener("request", async (req, res) => {
                 let POST_file = require(`.${clear_url}`);
                 
                 //執行該檔案的MSP_main函數
-                const result = await POST_file.MSP_main(req, param_object);
+                const result = await POST_file.Liminal_main(req, param_object);
 
                 //將回應轉換為字串
                 const result_string = result?.toString();
