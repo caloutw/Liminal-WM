@@ -60,7 +60,7 @@
 # Javascript檔案
 每個要讓伺服器運行的 ``.js`` 規格應當如下
 
-一個 ``MSP_main`` 函數，接收 ``req`` 和 ``param`` 兩個參數
+一個 ``Liminal_main`` 函數，接收 ``req`` 和 ``param`` 兩個參數
 
 ``req``是網頁請求類別，跟普通的req一樣
 
