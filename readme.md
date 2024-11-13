@@ -69,12 +69,12 @@
 
 ``./test/test.js``
 ```js
-async function MSP_main(req, param){
+async function Liminal_main(req, param){
 	return "Hello World";
 }
 
 module.exports = {
-	MSP_main : MSP_main
+	Liminal_main : Liminal_main
 }
 ```
 接下來進入``localhost:51000/test/test.js``
