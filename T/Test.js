@@ -1,4 +1,4 @@
-async function MSP_main(req, param){
+async function Liminal_main(req, param){
     let result = 1+1;
 
 	return `The 1+1 answer is ${result}.\nNow Time is ${getCurrentDateTimeUTC8()}`;
@@ -23,5 +23,5 @@ const getCurrentDateTimeUTC8 = () => {
 };
   
 module.exports = {
-	MSP_main : MSP_main
+	Liminal_main : Liminal_main
 }
