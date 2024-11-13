@@ -10,8 +10,11 @@
 
 <div align="center">
 
+[English](readme_en.md) | 繁體中文
+
 ![Language](https://badgen.net/badge/語言/Javascript/orange)
 ![Version](https://badgen.net/badge/Node版本/v20.17.0/green)
+
 
 </div>
 
@@ -60,7 +63,7 @@
 # Javascript檔案
 每個要讓伺服器運行的 ``.js`` 規格應當如下
 
-一個 ``MSP_main`` 函數，接收 ``req`` 和 ``param`` 兩個參數
+一個 ``Liminal_main`` 函數，接收 ``req`` 和 ``param`` 兩個參數
 
 ``req``是網頁請求類別，跟普通的req一樣
 
@@ -69,12 +72,12 @@
 
 ``./test/test.js``
 ```js
-async function MSP_main(req, param){
+async function Liminal_main(req, param){
 	return "Hello World";
 }
 
 module.exports = {
-	MSP_main : MSP_main
+	Liminal_main : Liminal_main
 }
 ```
 接下來進入``localhost:51000/test/test.js``
