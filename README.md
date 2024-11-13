@@ -1,7 +1,7 @@
 <div align="center">
-<h1>NetMSP</h1>
-<p>使用nodejs架設一個網頁服務器</p>
-<sub>更簡單的在nodejs中架設網頁。</sub>
+<h1>Liminal-WM</h1>
+<p>Liminal Web Manager</p>
+<sub>基於Nodejs的網頁管理員</sub>
 <p></p>
 </div>
 
@@ -19,7 +19,7 @@
 這是一個尚未完成的項目，請等等...
 
 
-# NetMSP Beta v1
+# Liminal-WM Beta v4
 
 基於Nodejs框架打造的網頁管理器
 
@@ -99,6 +99,7 @@ Next~
 | target | 目標資料夾 |
 | direct_access | 允許直接透過網址存取? |
 | allow_extension | 允許的類型 (default 系統會使用預設) |
+| error | 自訂錯誤頁面 |
 
 假設你要將 Hello 引導至根目錄，並且允許直接存取，且僅允許jpg的流量，那麼就添加一個物件
 ```json
@@ -111,11 +112,14 @@ Next~
 	    "jpg":{
 		"type":"default"
 	    }
+	},
+	"error":{
+		
 	}
 }
 ```
 
-> 記住 : 如果你允許了根目錄導向根目錄，所有資料夾導向邏輯將被覆蓋。
+> 記住 : 如果你允許了根目錄導向根目錄，在那之後的所有資料夾導向邏輯將被覆蓋。
 
 
 # 如何運行
