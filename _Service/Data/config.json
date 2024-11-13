@@ -1,0 +1,16 @@
+{
+    "running_port": 51000,
+    "max_post": 10,
+    "post_cooldown": 600,
+    "banned_ip": [],
+    "folder_mode": false,
+    "folder_allow_script": false,
+    "error": {
+        "401": "No_Unauthorized.html",
+        "403": "Forbidden.html",
+        "404": "Not_Found.html",
+        "405": "Method_Not_Allowed.html",
+        "429": "Too_Many_Requests.html",
+        "500": "Internal_Server_Error.html"
+    }
+}
