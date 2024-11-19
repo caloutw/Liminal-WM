@@ -1,0 +1,11 @@
+.Panel > *{
+    color: white;
+}
+
+.block_group > .block{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.list > table > tbody > tr > td:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}

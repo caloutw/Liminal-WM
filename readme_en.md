@@ -1,124 +1,101 @@
 <div align="center">
-<img src="/_Service/Logo.png" width="200px">
+<img src="./_Service/Web/Logo.png" width="200px">
 <h1>Liminal-WM</h1>
 <p>Liminal Web Manager</p>
-<sub>Web Manager based on Node.js</sub>
+<sub>A Node.js-based web manager</sub>
 <p></p>
 </div>
 
 <div align="center">
 
-English | [繁體中文](README.md)
+[English](readme_en.md) | 繁體中文
 
 ![Language](https://badgen.net/badge/Language/Javascript/orange)
-![Version](https://badgen.net/badge/NodeVersion/v20.17.0/green)
+![Version](https://badgen.net/badge/Node%20Version/v20.17.0/green)
 
 </div>
 
-# Not Yet Public
-This project is still in progress. Please wait...
+# Not Completed Yet
+This is an unfinished project. Please wait...
 
-# Liminal-WM Beta v4
+# Liminal-WM Beta v9
 
-A web manager built on the Node.js framework.
+A web manager built with the Node.js framework.
 
-I spent 24 hours of my life on this project to simplify future JavaScript-based web deployments.
+I wasted 24 hours of my life just to make it easier to host JS-based websites in the future.
 
-Initially, I intended to use Express.js but discovered that native `http` works just as well.
+Initially, I thought of using Express.js, but later found that the native `http` module could also work.
 
-To avoid numerous issues, I reverted to using the native module.
+To avoid a bunch of issues, I switched back to the native module.
 
-~~(I only realized halfway through that native `http` would work, almost exploded)~~
+~~(I only realized halfway through that the native module could work. I was about to explode.)~~
 
-Overall, this is designed to be simple and easy to use.
+Anyway, this tool is convenient and easy to use.
 
-To address server-side functionality, it also supports running Node.js (on the server), which compensates for the lack of PHP support.
+To make it run on the server side, I also added support for running Node.js (server-side).
 
-~~(Who knows how much time I spent dealing with this)~~
+Finally, this fills the gap of not being able to use PHP.
+
+~~(Who knows how much time I wasted dealing with this...)~~
 
 # Requirements
 - [Node.js v20](https://nodejs.org/en)
 
 # Testing Environment
-- Linux (Ubuntu LTS22.04)
+- Linux (Ubuntu LTS 22.04)
 
 # Server Framework
-Unlike typical server-side PHP, this uses Node.js and is restricted to CommonJS (please bear with this limitation for the first version).
+Unlike PHP, which is commonly used for server requests, this uses Node.js and is limited to CommonJS (please bear with me for the first version).
 
-~~(It also allows server-side Discord Bot functionality, WTF)~~
+~~(You can even use this to run a Discord Bot on the server side, WTF.)~~
 
 # JavaScript Files
-Each `.js` file intended for server operation should follow this structure:
+Each `.js` file intended for server execution should follow this specification:
 
-It should include an `Liminal_main` function, which accepts `req` and `param` as arguments.
+A `Liminal_main` function that takes two parameters: `req` and `param`.
 
-- `req` is the web request class, just like a standard `req`.
-- `param` contains parameters, which will be passed as an object if not using POST.
+`req` is the web request object, similar to a standard `req`.
 
-Example for `./test/test.js`:
+`param` represents the parameters. If POST is not used, the parameters will be passed as an object.
+
+`./T/Test.js`:
 ```js
-async function Liminal_main(req, param){
+async function Liminal_main(req, param) {
 	return "Hello World";
 }
 
 module.exports = {
-	Liminal_main : Liminal_main
+	Liminal_main: Liminal_main
 }
 ```
-Accessing `localhost:51000/test/test.js` should display "Hello World" as output.
+
+Then, navigate to `localhost:51000/Test/Test.js`  
+You should see the output "Hello World."
+
+(Refer to the file `T/Test.js` in the folder.)
 
 Next~
 
 # Basic Operation
 
-To start the web server, create a folder in `./` and add files inside it.
+To serve web pages, create a folder under `/` and place your files in it.
 
-The system's main process is `./main.mjs`; unless you're a developer, avoid modifying it.
+Modify the web port in `./_Service/Data/config.json` under the `running_port` field.
 
-The core system directory is `./_Service`; unless you're a developer, avoid modifying its contents.
-
-Check `./_Service/Data/url.json`.
-The sample format should be self-explanatory:
-| Field | Purpose |
-|---|---|
-| name | Service name for webpage identification |
-| url | Browser URL |
-| target | Target directory |
-| direct_access | Allow direct URL access? |
-| allow_extension | Allowed file types (default is system preset) |
-| error | Custom error page |
-
-For example, to map "Hello" to the root directory, allowing direct access and only `jpg` files, add the following:
-```json
-{
-	"name" : "Hello JPG",
-	"url" : "Hello",
-	"target" : "",
-	"direct_access" : true,
-	"allow_extension" : {
-	    "jpg":{
-		"type":"default"
-	    }
-	},
-	"error":{
-		
-	},
-	"ID":0
-}
-```
-
-> Note: If you enable root directory mapping to the root, all subsequent folder mapping logic will be overridden.
+> Note: If you allow root directory redirection, the folder redirection logic for all subsequent directories will be overridden.
 
 # How to Run
-```
-node ./main.mjs
-```
+``node ./main.mjs``
 
-Keep going, kid.
+Then you can access the website at `localhost:51000/_Service/`.
 
-I'll be back with updates in the future.
+Good luck, kid.
+
+I’ll come back to update this in the future.
 
 Feel free to open issues.
 
 # Thanks
-Special thanks to the developers of Node.js, and my brain.
+Special thanks to the developers of Node.js.
+
+And my brain.

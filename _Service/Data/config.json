@@ -6,11 +6,11 @@
     "folder_mode": false,
     "folder_allow_script": false,
     "error": {
-        "401": "No_Unauthorized.html",
-        "403": "Forbidden.html",
-        "404": "Not_Found.html",
-        "405": "Method_Not_Allowed.html",
-        "429": "Too_Many_Requests.html",
-        "500": "Internal_Server_Error.html"
+        "401": "./_Service/Error/401.html",
+        "403": "./_Service/Error/403.html",
+        "404": "./_Service/Error/404.html",
+        "405": "./_Service/Error/405.html",
+        "429": "./_Service/Error/429.html",
+        "500": "./_Service/Error/500.html"
     }
 }

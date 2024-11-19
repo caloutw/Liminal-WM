@@ -1,5 +1,5 @@
 async function Liminal_main(req, param){
-    let result = 1+1;
+  let result = 1+1;
 
 	return `The 1+1 answer is ${result}.\nNow Time is ${getCurrentDateTimeUTC8()}`;
 }

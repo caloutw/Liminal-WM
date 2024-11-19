@@ -1,0 +1,161 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+    margin: 0;
+}
+
+body{
+    min-width: 100vw;
+    width: fit-content;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    max-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    overflow: hidden;
+}
+
+.navigation{
+    width: 100%;
+    max-width: 100vw;
+    min-height: 75px;
+    height: 4vw;
+
+    display: flex;
+
+    flex-direction: row;
+}
+
+.navigation > .left, 
+.navigation > .center,
+.navigation > .right{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    transition: .3s;
+}
+
+.navigation > .left, 
+.navigation > .right{
+    flex: 1;
+}
+
+.navigation > .left{
+    justify-content: left;
+}
+
+.navigation > .center{
+    flex: 3;
+    justify-content: center;
+}
+
+.navigation > .right{
+    justify-content: right;
+}
+
+.logo{
+    height: 100%;
+    aspect-ratio: 1/1;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo > img{
+    height: 75%;
+}
+
+.selection{
+    min-width: 3vw;
+    width: fit-content;
+    height: 100%;
+
+    padding: 0 max(15px, 1vw);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: max(20px, 1vw);
+
+    cursor: pointer;
+}
+
+.phone{
+    display: none;
+}
+
+[Liminal-WM-item="panel-element"]{
+    flex: 1;
+
+    padding-bottom: max(75px, 4vw);
+
+    opacity: 1;
+
+    overflow-y: auto;
+    transition: .1s !important;
+}
+
+.switch{
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .navigation > .left{
+        flex: 0;
+    }
+
+    .navigation > .center{
+        position: absolute;
+        top: -200%;
+
+        flex: 0;
+
+        width: 100%;
+        height: 100%;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+        background-color: rgba(125, 125, 125, 0);
+        
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .navigation > .center.show{
+        top: 0;
+
+        transition: .3s;
+    }
+
+    .navigation > .center > .selection{
+        flex: 1;
+
+        width: 100%;
+        max-height: 15vw;
+
+        padding: 0;
+
+        z-index: 999;
+    }
+
+    .phone{
+        display: flex;
+    }
+}

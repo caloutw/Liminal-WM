@@ -1,24 +1,23 @@
 [
     {
-        "name" : "test",
-        "url" : "test",
-        "target" : "T",
-        "direct_access" : true,
-        "allow_script" : true,
-        "allow_extension" : {
-            "html":{
-                "type":"default"
+        "name": "Test",
+        "url": "Test",
+        "target": "T",
+        "direct_access": true,
+        "allow_script": true,
+        "allow_extension": {
+            "html": {
+                "type": "default"
             },
-            "css":{
-                "type":"default"
+            "css": {
+                "type": "default"
             },
-            "js":{
-                "type":"default"
+            "js": {
+                "type": "default"
             }
         },
-        "error":{
-            
-        },
-        "ID": 0
+        "error": {},
+        "ID": 0,
+        "Disable": false
     }
 ]

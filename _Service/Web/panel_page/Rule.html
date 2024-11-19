@@ -1,0 +1,154 @@
+<div class="modify_block" visible="true">
+    <div class="back" onclick="close_modify()"></div>
+    <div class="center">
+        <div class="title_bar">
+            <div class="title" Liminal-WM="title">
+                Title
+            </div>
+        </div>
+        <div class="content">
+            <div class="block">
+                <div class="name">
+                    System ID
+                </div>
+                <div>:</div>
+                <div class="value" Liminal-WM="id">
+                    0
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="name">
+                    Disable
+                </div>
+                <div>:</div>
+                <input type="checkbox" class="value" Liminal-WM="disable">
+            </div>
+
+            <div class="block">
+                <div class="name">
+                    Name
+                </div>
+                <div>:</div>
+                <input type="text" class="value" Liminal-WM="name">
+            </div>
+
+            <div class="block">
+                <div class="name">
+                    Url
+                </div>
+                <div>:</div>
+                <input type="text" class="value" Liminal-WM="url">
+            </div>
+
+            <div class="block">
+                <div class="name">
+                    Target
+                </div>
+                <div>:</div>
+                <input type="text" class="value" Liminal-WM="target">
+            </div>
+
+            <div class="block">
+                <div class="name">
+                    Direct Access
+                </div>
+                <div>:</div>
+                <input type="checkbox" class="value" Liminal-WM="direct_access">
+            </div>
+
+            <div class="block">
+                <div class="name">
+                    Allow Script
+                </div>
+                <div>:</div>
+                <input type="checkbox" class="value" Liminal-WM="allow_script">
+            </div>
+
+            <div class="block table">
+                <div class="name">
+                    Error Page
+                </div>
+                <div class="btn blue" onclick="edit_alert('', 'rule', 'error_page')">
+                    create
+                </div>
+                <table cellspacing="0" cellpadding="0" Liminal-WM="error_page">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Code
+                            </td>
+                            <td>
+                                Page
+                            </td>
+                            <td>
+                                modify
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="block table">
+                <div class="name">
+                    Allow Type
+                </div>
+                <div class="btn blue" onclick="edit_alert('', 'rule', 'allow_type')">
+                    create
+                </div>
+                <table cellspacing="0" cellpadding="0" Liminal-WM="allow_type">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Extension
+                            </td>
+                            <td>
+                                Content-type
+                            </td>
+                            <td>
+                                modify
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="operate">
+            <div class="btn blue" onclick="close_modify()">
+                Cancel
+            </div>
+            <div class="btn red" Liminal-WM="delete_rule" onclick="delete_rule()">
+                Delete
+            </div>
+            <div class="btn green" onclick="save_rule()">
+                Save
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Panel">
+    <div class="title">
+        Operate
+    </div>
+
+    <div class="btn_nav">
+        <div class="btn" onclick="modify(-1,'rule')">
+            + Create new rule
+        </div>
+    </div>
+</div>
+
+<div class="Panel">
+    <div class="title">
+        Rule
+    </div>
+
+    <div class="list" Liminal-WM-item="Rule">
+        <table cellspacing="0" cellpadding="0">
+            
+        </table>
+    </div>
+</div>

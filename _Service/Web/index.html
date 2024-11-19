@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base href="/_Service/"> 
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liminal-WM Panel</title>
+
+        <link href="./index.css" rel="stylesheet">
+        <link href="./index_dark.css" rel="stylesheet">
+
+        <link href="./panel_page.css" rel="stylesheet">
+        <link href="./panel_page_dark.css" rel="stylesheet">
+
+        <link href="./Logo.ico" rel="icon">
+
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div class="navigation">
+            <div class="left">
+                <div class="logo">
+                    <img src="./Logo.png">
+                </div>
+            </div>
+            <div class="center" onclick="show_selection()">
+                <div class="selection" onclick="page_req('Dashboard')">
+                    Dashboard
+                </div>
+                <div class="selection" onclick="page_req('Rule')">
+                    Rule Setting
+                </div>
+            </div>
+            <div class="right">
+                <div class="selection phone" onclick="show_selection()">
+                    Menu
+                </div>
+                <div class="selection" style="color: red;" onclick="logout()">
+                    Logout
+                </div>
+            </div>
+        </div>
+
+        <div Liminal-WM-item="panel-element" class="switch">
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(70, 70, 70);
+}
+
+.navigation{
+    background-color: rgb(40, 40, 40);
+}
+
+.navigation > *{
+    background-color: rgb(40, 40, 40);
+}
+
+.selection{
+    color: white;
+    background-color: rgb(40, 40, 40);
+}
+
+.selection:hover{
+    background-color: rgb(80, 80, 80);
+}
