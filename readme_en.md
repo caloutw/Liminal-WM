@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[English](readme_en.md) | 繁體中文
+English | [繁體中文](readme.md)
 
 ![Language](https://badgen.net/badge/Language/Javascript/orange)
 ![Version](https://badgen.net/badge/Node%20Version/v20.17.0/green)
