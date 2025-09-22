@@ -1,3 +1,7 @@
+# 停止支援
+本專案將永久轉移至 [Liminal-NSP](https://github.com/caloutw/Liminal-NSP) 上<br>
+此項目將永遠不再更新。
+
 <div align="center">
 <img src="./_Service/Web/Logo.png" width="200px">
 <h1>Liminal-WM</h1>
