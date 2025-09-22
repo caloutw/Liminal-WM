@@ -1,3 +1,7 @@
+# End of Support
+This project is end of support, you can go to [Liminal-NSP](https://github.com/caloutw/Liminal-NSP) and get the newest update.
+
+
 <div align="center">
 <img src="./_Service/Web/Logo.png" width="200px">
 <h1>Liminal-WM</h1>
@@ -99,3 +103,4 @@ Feel free to open issues.
 Special thanks to the developers of Node.js.
 
 And my brain.
+
